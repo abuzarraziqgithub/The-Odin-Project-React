@@ -7,7 +7,7 @@
 
 //* React provides powerful primitives(built-in functions/modules) that allow us to build user interfaces of varying/different complexities.
 
-//* React is the most powerful, widely used JavaScript libraries.
+//* React is the most powerful, widely used JavaScript library.
 
 //* Frameworks make our code easily scalable, more readable, and possibly a thousand times more efficient.
 
@@ -17,4 +17,33 @@
 //* -> It's opinionated, which means it won't force to follow any specific design patterns, project organizational structure, or logic.
 //* -> There is a samller learning curve, especially if already have a good grasp of JavaScript, HTML, and CSS from our previous lessons.
 
-// React by Odin Project
+//? Major Frameworks -- Background and Life Cycle Trends
+//* The LifeCycle duration and journey of a framework depend on how popular or widely used the framework is.
+
+//* There are some Major Frameworks, that were very popular in thier time.
+//* jQuery, AngularJS, VueJS and ReactJS have remained prominent names when it comes to top frontend frameworks for almost a decade now.
+
+//! jQuery (JavaScript Library):
+/*
+ * jQuery was invented by Jhon Resig and was launched in 2006.
+ * It was one of the earliest niche.
+ * It is used for designing the web applications.
+ * According to Stack Overflow surveys, the number of questions was high as 8% at a point of time. But it gradually fell to 2% during 2020.
+ */
+
+//! AngularJS
+/*
+ * Launched in 2010 by //! Google.
+ * AngularJS supported the ability to generate reusable components.
+ * In 2016, Google launched a TypeScript based open-source web application framework named Angular(Angular 2+).
+ * Angular was an update to the previously introduced Angular JS with better features and compatibility.
+ */
+
+//! ReactJS
+/*
+ * React is Frontend library that was invented by Jordan Walke of Facebook.
+ * It is owned and maintained by Facebook.
+ * Launched in 2013.
+ * The Reason of React was for the need of better code to manage Facebook Ads more Effectively.
+ * The Framework is relevant today as it was back in 2013 and is only growing by the day.
+ */
