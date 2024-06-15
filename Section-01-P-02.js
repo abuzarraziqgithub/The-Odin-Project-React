@@ -47,3 +47,8 @@
  * The Reason of React was for the need of better code to manage Facebook Ads more Effectively.
  * The Framework is relevant today as it was back in 2013 and is only growing by the day.
  */
+
+//! The difference between Library and Framework
+//* Frameworks and Libraries are both code written by someone else that helps you to perform some common tasks in a less verbose way.
+//* A Framework inverts the control of the program. It tells the developer what they need. A Library doesn't . The programmer calls the library where and when they need it.
+//* The degree of freedom a library or framework gives the developer will dictate how "opinionated" it is.
