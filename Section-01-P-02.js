@@ -62,3 +62,27 @@
 //* Fast, efficient, and easy to learn.
 //* It guarantees stable code.
 //* It is backed by a strong community.
+
+//? Setting Up A React Enviroment
+//* There are multiple ways to start using React in our projects.
+//* From attaching a set of script tags which serve React from CDN.
+//* We can use robust toolchains and frameworks that are highly configurable and allow for increased scalability and optimization.
+//! The toolchains are Vite's React Config
+//! Gatsby
+//! NextJS
+//! Create React App (deprecated)
+
+//? We need toolchains because it's hard to just make our own React project.
+//? React is a complex beast and there are many moving parts.
+//? Before we can start writing any sort of code that provides functionality, we would need to configure at least the following:
+//* Package Management (NPM,YARN)
+//* Module bundling (Webpack, Parcel)
+//* Compilation (Babel)
+//* React iself
+//? All of this, and sometimes much more is required to get a React project and development enviroment up and running.
+
+//? What and why we use Vite?
+//* Vite("Quick" in French) builds Frontend tools for developers and it laverages the latest technologies under the hood to provide a great developer experience.
+//* It also caters to to the React ecosystem.
+//* We can create React project through vite, It requires minimal configuration and provides extremely useful tools right out of the box.
+//* It is a build tool that aims to provide a faster and leaner development experience for modern web projects.
