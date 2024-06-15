@@ -52,3 +52,13 @@
 //* Frameworks and Libraries are both code written by someone else that helps you to perform some common tasks in a less verbose way.
 //* A Framework inverts the control of the program. It tells the developer what they need. A Library doesn't . The programmer calls the library where and when they need it.
 //* The degree of freedom a library or framework gives the developer will dictate how "opinionated" it is.
+
+//! The advantages of React JS are :
+//* It is composable.
+//* It is declarative. (DOM)
+//* Write once, and learn anywhere.
+//* It is simple.
+//* SEO friendly. (Single Page)
+//* Fast, efficient, and easy to learn.
+//* It guarantees stable code.
+//* It is backed by a strong community.
