@@ -1,4 +1,5 @@
 import PropsInRendering from "./PropsInRend";
+import CondRenderingUI from "./Cond-Rend-UI";
 
 function Rendering() {
   //* Rendering for static Lists
@@ -60,9 +61,11 @@ function Rendering() {
         {/* We can even store this expression inside a Variable to look moew dynamically */}
         {/* {dynamicListItems} */}
 
-        {/* We can render the entire Component */}
+        {/* We can render the entire Component (Component of PropsInRend file) */}
+        {/* <PropsInRendering /> */}
 
-        <PropsInRendering />
+        {/* Conditional Rendering Component */}
+        <CondRenderingUI />
       </ul>
     </>
   );

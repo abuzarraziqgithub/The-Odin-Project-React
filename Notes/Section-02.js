@@ -151,5 +151,44 @@
 
 
 ? Conditionaly Rendering UI.
+* Let us make some decisions within our component.
+* What if we only want to render an animal that starts with the letter L?
+* To make these decisions, we would use some sort of conditional expression.
+* For the conciseness, we will be removing the <ListItem /> component inside our CondRe Component.
+
+* One way to conditionally render an element is with a ternary operator, using a boolean value to decide what to render.
+
+* We used startsWith method to check if the animal starts with the letter L. This method wither returns true or false.
+
+* Returning the null indicates that no element will be rendered
+
+
+* Another quick way of conditionally rendering an element is by using the && operator.
+* In the first condition, we used the startsWith method.
+* If the result of the startsWith function is true, then it returns the second operand, which is <li>, and renders.
+* Otherwise, if the condition is false, it just ignored.
+* When using && for conditional rendering, don't put numbers on the left side.
+?{
+? To test the condition, JavaScript converts the left side to a boolean automatically.
+? However, if the left side is 0, then the whole expression gets that value(0),and React will happily render 0 rather than nothing.
+
+? For Example, a common mistake is to write code like messageCount &&, <p> New messages </p>.
+? It is easy to assume that it renders nothing when messageCount is 0, but it really renders the 0 itself.
+? To fix it, make the left side a boolean: messageCount > 0 && <p>New messages</p>
+?}
+
+* We can also use if, if/else, and switch to conditionally render something.
+* We creted a component in which we applied two conditions
+* Check if the animals property is provided.
+* Check if the animals length is greater than 0.
+* In our <List />, we have two if statements acting as a guard that immediately returns an element based on the condition.
+
+* One is to check if the property animalsList exists, and the other is to check if the length of the list is greater than 0.
+* If the second if statement executes, it will immediately return the <div> element that contains the text "There are no animals in the list".
+* If we remove the animalsList, the first statement will now execute and return a <div> with the text "Loading...".
+* This is often the case when you are fetching from an API, since it might take some time to actually retrieve the data, it is good practice to show an indicator for that.
+
+* We can accomplish this with just the ternary and && operators.
+
 
 */
