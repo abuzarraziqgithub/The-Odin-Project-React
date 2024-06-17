@@ -123,3 +123,33 @@
  * They work inside the JSX tag content or immediately after = in attributes.
  * {{ object }} is not a special syntax: It's a JavaScript object tucked insode JSX curly braces. 
  */
+
+//! 3:- Rendering Techniques
+/* (This article source code is in the Project)
+? Render a list of elements/components in JSX.
+* We can create a component that lists multiple Animals.
+* It is perfectly acceptable.
+* But what if we want to render more than just four?
+* It can be tedious and long, and most of the time, we will be dealing with a data structure(like list) rather than hard-coding each animal.
+* For that we can embed expressions inside JSX with curly braces. we did that in our project.
+* We define an array called animals.
+* Inside our JSX, we use map to return a new array of li elements, adding animal as its text.
+* This is because JSX has the ability to automatically render arrays.
+* The key in our <li> element is used for to let React know the identity of each element in the list.
+* React must know this information if you are dealing with a dynamic list where you add or remove elements.
+* It does not matter for static lists. It is only for dynamic lists.
+
+* We used props using components.
+* Props are arguments that are passed into components.
+* We had moved our <ul> to a different component called <List />.
+* It still returns that <ul>, but we can do a lot more with it as a component.
+
+* The <List /> Component accepts a prop which is an object containing the animalsList that we defines as a property when we wrote <List animalsList={animals} />.
+* We will need to pass the animals to the property.
+* We also created a different Component for the <li> called <ListItem />, which also accepts props, and uses props.animalItems to render the text.
+* It should now render the same thing.
+
+
+? Conditionaly Rendering UI.
+
+*/
