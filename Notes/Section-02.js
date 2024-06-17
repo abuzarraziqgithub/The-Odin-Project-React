@@ -103,4 +103,23 @@
  * React components group rendering logic together with markup because they are related.
  * JSX is similar to HTML, with few differences. You can use a converter if you need to.
  * Error messages will often point you in the right direction to fixing your markup.
+ 
+ 
+ ? JavaScript in JSX with Curly Braces.
+ * We can use curly braces in our JSX to open a window to JavaScript.
+ * If we want to specify src or alt text dynamically, we could use a value from JavaScript by replacing "and" with { and }.
+ * Any JavaScript expression will work between curly braces, including function calls like formatDate().
+ * We can pass even objects in JSX.
+ * Objects are also denoted with curly braces, like {name:'etc'}. Therefore, to pass a JS object in JSX, we must waro it in another pair of curly braces {{object}}.
+ * React does not require us to use inline styles (CSS classes work great for most cases). But when we need an inline style, we pass an object to the style attribute.
+ * Inline style properties are written in camelCase in JSX.
+ * We can move several expressions into one object, and reference them in our JSX inside curly braces.
+ 
+
+
+ ? Recap :
+ * JSX attributes inside quotes are passed as strings.
+ * Curly braces let us bring JavaScript logic and variables into our markup.
+ * They work inside the JSX tag content or immediately after = in attributes.
+ * {{ object }} is not a special syntax: It's a JavaScript object tucked insode JSX curly braces. 
  */
