@@ -13,7 +13,6 @@ function App() {
       <JSX />
       {/* Component from the Rendering Topic file*/}
       {/* <Rendering /> */}
-
       {/* Component from the file*/}
       <OtherRendTechs />
     </>
