@@ -4,6 +4,7 @@ import Greeting from "./components/Greeting";
 import JSX from "./components/JSX";
 import Rendering from "./components/Rendering";
 import OtherRendTechs from "./components/Other-Rend-techs";
+import Keys from "./components/Keys";
 function App() {
   return (
     <>
@@ -15,6 +16,9 @@ function App() {
       {/* <Rendering /> */}
       {/* Component from the file*/}
       <OtherRendTechs />
+
+      {/* Keys Topic */}
+      <Keys />
     </>
   );
 }

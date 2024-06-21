@@ -189,6 +189,61 @@
 * This is often the case when you are fetching from an API, since it might take some time to actually retrieve the data, it is good practice to show an indicator for that.
 
 * We can accomplish this with just the ternary and && operators.
+*/
+
+//! 3:- Keys In React
+/*
+ * Keys are special props for our components.
+
+? why does React need keys?
+* We used the .map() method to iterate over the an array of data and return list of elements.
+* Now imagine, if any of the items in the list were to change, how would React know which item to update?
+
+* If the list were to change, one of the following things should happen:
+ * We completely re-render the entire list, or
+ * we hunt down the specific items that were changed and only re-render those.
+
+ * Assuming we want to hunt down that one specific item that was changed and Not re-render the entire list.
+ * We need something to track that specific item.
+ * We can track down a specific item by using a key.
+ 
+* When the list is updated, React matches the keys of each of the previous list to the updated list.
+* If there were any changes, React will only update the items that have changed.
+* As long as keys remain consistent and unique, React can handle the DOM effectively and efficiently.
+
+* Keys are passed into the component or a DOM element as a prop(Arguments).
+
+? What should be used as a key?
+* Key should be some identifier(a string or number) that is unique id to each entry(element).
+* If we are defining data ourselves, it is good practice to assign a unique  id to each item. 
+* We can use some packages as well to generate unique id's like uuid package.
+
+* If it is sure that the list will remain unchanged throughout the application's life, we can use the array index as a key.
+* However, it is not recommended since it can lead to confusing bugs if the list changes when the items are deleted, inserted, or rearranged.
+
+? Keys are straightforward to use.
+? There is anti-pattern we should be aware of.
+? Keys should never be generated on the fly. Using key={Math.random()} or key={uuid()} while rendering the list defeats the purpose of the list.
+? As now a new key will get created for every render of the list.
+* Key should be inferred from the data itself.
 
 
+? Conclusion:
+* Keys are passed into the component OR a DOM element as a prop(Arguments).
+* If we want to track a specific item and want to  update it, we pass a unique key to it.
+* We can track down that specific item by using that unique key.
+* When the list is updated, React matches the key of each item of the previous list to the updated list.
+* React will then update that item which has changes and not the entire list or items if they were not changed or upadted.
+? There are some Important points for keys:
+* Key should be some identifier that is unique id to each entry.
+* We can use some packages to generate unique id's like uuid package.
+* It is not recommended to use index as a key if the list changes when the items are deleted, inserted, or rearranged.
+* Keys should never be generated on the fly.
+
+
+* Why does React need keys?
+
+* Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.
+
+* File names in a folder and JSX keys in an array serve a similar purpose. They let us uniquely identify an item between its siblings. A well-chosen key provides more information than the position within the array. Even if the position changes due to reordering, the key lets React identify the item throughout its lifetime.
 */
