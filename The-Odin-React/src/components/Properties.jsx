@@ -51,6 +51,28 @@ import React from "react";
 
 // export default Properties;
 
+//* Applying default values inside function argument
+function Circle({
+  width = 150,
+  height = 150,
+  borderRadius = 50,
+  text = "Circle",
+  backgroundColor = "crimson",
+  color = "whitesmoke",
+  fontWeight = 700,
+}) {
+  const circlestyle = {
+    width: width + "px",
+    height: height + "px",
+    borderRadius: borderRadius + "px",
+    backgroundColor: backgroundColor,
+    color: color,
+    fontWeight: fontWeight,
+  };
+  return <div circleStyle={circlestyle}>{text}</div>;
+}
+
+//* Applying Default values to properties to avoid repetition
 function Square(props) {
   const squareStyle = {
     width: props.width + "px",
@@ -65,84 +87,31 @@ function Square(props) {
 
   return (
     <>
-      <div style={squareStyle}>{props.boxContent}</div>
+      <p style={squareStyle}>{props.boxContent}</p>
     </>
   );
 }
-
+Square.defaultProps = {
+  width: 150,
+  height: 150,
+  backgroundColor: "crimson",
+  color: "whitesmoke",
+  borderRadius: 10,
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  boxContent: "Box content",
+  fontWeight: 700,
+};
 function Child() {
   return (
     <>
-      <Square
-        width={150}
-        height={150}
-        backgroundColor="orangered"
-        boxContent="This is my box"
-        borderRadius="5"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-      />
-      <br />
-      <Square
-        width={150}
-        height={150}
-        backgroundColor="#FFF990"
-        boxContent="This is my box"
-        color="orangered"
-        borderRadius="5"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-      />
-      <br />
-      <Square
-        width={150}
-        height={150}
-        backgroundColor="orangered"
-        boxContent="This is my box"
-        borderRadius="5"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-      />
-      <br />
-      <Square
-        width={150}
-        height={150}
-        backgroundColor="#FF0090"
-        boxContent="This is my box"
-        color="black"
-        borderRadius="5"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-      />
-      <br />
-      <Square
-        width={150}
-        height={150}
-        backgroundColor="#F0222220"
-        boxContent="This is my box"
-        color="orangered"
-        borderRadius="5"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-      />
-      <br />
-      <Square
-        width={150}
-        height={150}
-        backgroundColor="#FFF990"
-        boxContent="This is my box"
-        color="orangered"
-        borderRadius="5"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-      />
-      <br />
+      <Square />
+      <Square backgroundColor="blue" />
+      <Square backgroundColor="green" />
+      <Square backgroundColor="white" color="#000" />
+      <Square backgroundColor="indigo" color="#10bbbb" />
+      <Circle />
     </>
   );
 }
