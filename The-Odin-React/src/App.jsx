@@ -5,6 +5,7 @@ import JSX from "./components/JSX";
 import Rendering from "./components/Rendering";
 import OtherRendTechs from "./components/Other-Rend-techs";
 import Keys from "./components/Keys";
+import Properties from "./components/Properties";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
 
       {/* Keys Topic */}
       <Keys />
+      <Properties />
     </>
   );
 }

@@ -191,7 +191,7 @@
 * We can accomplish this with just the ternary and && operators.
 */
 
-//! 3:- Keys In React
+//! 4:- Keys In React
 /*
  * Keys are special props for our components.
 
@@ -247,3 +247,27 @@
 
 * File names in a folder and JSX keys in an array serve a similar purpose. They let us uniquely identify an item between its siblings. A well-chosen key provides more information than the position within the array. Even if the position changes due to reordering, the key lets React identify the item throughout its lifetime.
 */
+
+//! 5:- Passing Data Between Components(Props)
+/*
+ * We will learn about React props(short for properties) and how to use props to pass data between components.
+
+
+? Data transfer in React
+* Data is transferred from parent component to child components via props.
+* This data transfer is unidirectional.
+* Any changes made to this data will only affect child components using the data.
+* This restriction on the flow of data give us more explicit control over it, resulting on the fewer errors in our application.
+
+
+? Using props in React
+* Creating a new component for each of the button in the example would very quickly lead to a LOT of code duplication.
+
+* By using props, we can account for any number of variations with a single button component.
+* The "Button" functional component now recieves props as a function argument
+* The individual properties are then referenced within the component via "props.propertyName".
+* When rendering the Button components within App, the prop values are defined on each component.
+* Inline styles are dynamically generated and then applied to the button element.
+
+* 
+ */
