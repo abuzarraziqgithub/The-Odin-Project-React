@@ -269,5 +269,15 @@
 * When rendering the Button components within App, the prop values are defined on each component.
 * Inline styles are dynamically generated and then applied to the button element.
 
-* 
+? Prop destructuring
+* Unpacking props in the component arguments allows for more concise and readable code.
+* A very common pattern in React is destructuring props.
+* We pass an object inside the Components function and define properties there.
+
+
+
+? Default props:
+* There is some repetition when defining props on the Button component within the Child/ Properties or App Component.
+* In order to stop repeating ourselves re-defining those common values, and protect our Application from undefined values.
+* We can define default props that will be used by the component in the absence of supplied values.
  */
