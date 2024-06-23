@@ -1,8 +1,7 @@
 import React from "react";
 
 /*
-! Destructuring props
- * function Button({ text, color, fontSize})
+! Destructuring  * function Button({ text, color, fontSize})
 *{
 ? const buttonStyle = 
 ? {
@@ -16,16 +15,16 @@ import React from "react";
  * 
  */
 
-// function Button(props) {
+// function Button( {
 //   const btnStyle = {
-//     color: props.color,
-//     backgroundColor: props.backgroundColor,
-//     fontSize: props.fontSize + "px",
+//     color: color,
+//     backgroundColor: backgroundColor,
+//     fontSize: fontSize + "px",
 //   };
 
 //   return (
 //     <>
-//       <button style={btnStyle}>{props.text}</button>
+//       <button style={btnStyle}>{text}</button>
 //     </>
 //   );
 // }
@@ -50,59 +49,39 @@ import React from "react";
 // }
 
 // export default Properties;
-
-//* Applying default values inside function argument
-function Circle({
+//* Applying Default values to properties to avoid repetition
+function Square({
   width = 150,
   height = 150,
-  borderRadius = 50,
-  text = "Circle",
   backgroundColor = "crimson",
   color = "whitesmoke",
+  borderRadius = 10,
+  display = "flex",
+  justifyContent = "center",
+  alignItems = "center",
+  boxContent = "Box content",
   fontWeight = 700,
+  margin = "20",
 }) {
-  const circlestyle = {
+  const squareStyle = {
     width: width + "px",
     height: height + "px",
-    borderRadius: borderRadius + "px",
     backgroundColor: backgroundColor,
     color: color,
+    borderRadius: borderRadius + "px",
+    display: display,
+    justifyContent: justifyContent,
+    alignItems: alignItems,
     fontWeight: fontWeight,
-  };
-  return <div circleStyle={circlestyle}>{text}</div>;
-}
-
-//* Applying Default values to properties to avoid repetition
-function Square(props) {
-  const squareStyle = {
-    width: props.width + "px",
-    height: props.height + "px",
-    backgroundColor: props.backgroundColor,
-    color: props.color,
-    borderRadius: props.borderRadius + "px",
-    display: props.display,
-    justifyContent: props.justifyContent,
-    alignItems: props.alignItems,
+    margin: margin + "px",
   };
 
   return (
     <>
-      <p style={squareStyle}>{props.boxContent}</p>
+      <div style={squareStyle}>{boxContent}</div>
     </>
   );
 }
-Square.defaultProps = {
-  width: 150,
-  height: 150,
-  backgroundColor: "crimson",
-  color: "whitesmoke",
-  borderRadius: 10,
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  boxContent: "Box content",
-  fontWeight: 700,
-};
 function Child() {
   return (
     <>
@@ -111,7 +90,6 @@ function Child() {
       <Square backgroundColor="green" />
       <Square backgroundColor="white" color="#000" />
       <Square backgroundColor="indigo" color="#10bbbb" />
-      <Circle />
     </>
   );
 }

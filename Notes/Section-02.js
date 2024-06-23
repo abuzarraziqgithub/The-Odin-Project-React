@@ -280,4 +280,5 @@
 * There is some repetition when defining props on the Button component within the Child/ Properties or App Component.
 * In order to stop repeating ourselves re-defining those common values, and protect our Application from undefined values.
 * We can define default props that will be used by the component in the absence of supplied values.
+*
  */

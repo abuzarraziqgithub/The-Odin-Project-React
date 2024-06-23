@@ -6,6 +6,7 @@ import Rendering from "./components/Rendering";
 import OtherRendTechs from "./components/Other-Rend-techs";
 import Keys from "./components/Keys";
 import Child from "./components/Properties";
+import FunctionProp from "./components/Function-Prop";
 function App() {
   return (
     <>
@@ -14,13 +15,17 @@ function App() {
       {/* Component from the JSX Topic file*/}
       <JSX />
       {/* Component from the Rendering Topic file*/}
-      {/* <Rendering /> */}
+      <Rendering />
       {/* Component from the file*/}
       <OtherRendTechs />
-
       {/* Keys Topic */}
       <Keys />
+      {/* Props Topic */}
       <Child />
+      {/* Props Topic */}
+      <FunctionProp />
+
+      {console.log(App.prototype)}
     </>
   );
 }
