@@ -24,8 +24,6 @@ function App() {
       <Child />
       {/* Props Topic */}
       <FunctionProp />
-
-      {console.log(App.prototype)}
     </>
   );
 }

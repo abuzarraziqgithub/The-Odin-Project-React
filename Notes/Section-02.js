@@ -280,5 +280,33 @@
 * There is some repetition when defining props on the Button component within the Child/ Properties or App Component.
 * In order to stop repeating ourselves re-defining those common values, and protect our Application from undefined values.
 * We can define default props that will be used by the component in the absence of supplied values.
-*
+* There are two methods for default props.
+* The easy and common way is passing the destructuring prop as an argument to the function component and assigning default values to properties.
+* The other way is by calling defaultProp property and define there, but this is not recommended by React(It will soon deprecated due to some reasons.)
+* We will then only need to supply prop values to Component when rendering within Parent component if they differ from the default values defined on Component.defaultProps or destr Prop.
+
+
+? Functions as props
+* In addition to passing properties to child components as props, we can also pass functions.
+* The function btnClickHandler in our file is defined in the parent Component(FunctionProp).
+* A reference to that function is passed as a value to the handleClick prop on the Button Component.
+* The function is recieved in Button and is called on a click event.
+
+? Few things to note :
+* We only pass through a reference to BtnClickHandler.
+* We do not include parenthesis when passing the function to Button
+* If we were to do something like handleClick={BtnClickHandler()}, then the function would be called as the button renders.
+
+* Every Button calling this function will navigate to the same page.
+* We refactored the function and supplied an argument within Button to customize this functionality.
+* When supplying an argument to the function, we can't just write onclick={handleClick('url')}, and instead must attach anonymous to the onclick and which then calls the function with the argument.
+* This is for to prevent the function being called during the render.
+
+? Conclusion:
+* Hopefully, we can now understand from the examples in this lesson.
+* Just how incredibly useful props are for writing reusable and customizable React components.
+* We can pass data between components in order to customize our components dynamically and in a more DRY way.
+* We avoid duplication by using Props.
+* We use props destructuring(the more accurate and common way).
+* We can also apply default values to props as component functional arguments.
  */

@@ -17,7 +17,10 @@ function Button({
 
   return (
     <>
-      <button onClick={handleClick} style={btnStyle}>
+      <button
+        onClick={() => handleClick("https://www.github.com/abuzarraziqgithub")}
+        style={btnStyle}
+      >
         {text}
       </button>
     </>
@@ -25,8 +28,7 @@ function Button({
 }
 
 function FunctionProp() {
-  const btnClickHandler = () =>
-    (window.location.href = "https://www.github.com/abuzarraziqgithub");
+  const btnClickHandler = (url) => (window.location.href = url);
   return (
     <>
       <Button handleClick={btnClickHandler} width={120} />
