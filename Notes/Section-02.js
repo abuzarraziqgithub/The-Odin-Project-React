@@ -130,7 +130,7 @@
 * We can create a component that lists multiple Animals.
 * It is perfectly acceptable.
 * But what if we want to render more than just four?
-* It can be tedious and long, and most of the time, we will be dealing with a data structure(like list) rather than hard-coding each animal.
+* It can be tedious and long, and most of the time, we will be dealing with a data structure(like list) rather than hard-coding each animal,
 * For that we can embed expressions inside JSX with curly braces. we did that in our project.
 * We define an array called animals.
 * Inside our JSX, we use map to return a new array of li elements, adding animal as its text.
