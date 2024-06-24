@@ -5,7 +5,9 @@ const COLORS = ["pink", "green", "blue", "yellow", "purple"];
 
 function Color() {
   const [backgroundColor, setBackgroundColor] = useState(COLORS[0]);
-  const onButtonClick = (color) => () => {
+  //* It takes initialValue as a parameter and returns an array of two elements.
+  //* const [currentStateValue, setStateValue] = useState(initialValue)
+  const onButtonClick = (color) => {
     setBackgroundColor(color);
   };
 
@@ -16,7 +18,7 @@ function Color() {
           <button
             type="button"
             key={color}
-            onClick={onButtonClick(color)}
+            onClick={() => onButtonClick(color)}
             className={backgroundColor === color ? "selected" : ""}
           >
             {color}
