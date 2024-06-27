@@ -83,3 +83,32 @@ const [index, setIndex] = useState(0);
  * We can have more than one state variable. Internally, React matches them up by their order.
  * State is private to the component. If we render it in two places, each copy gets it's own state.
  */
+
+/*
+ * Summary:
+ * 1 - Our component renders the first time:- Because we passed 0 to useState as the initial value for index, it will return [0, setIndex]. React remembers 0 is the latest state value.
+
+ * 2 - We update the state:- When a user clicks the button, it calls setIndex(index + 1). index is 0, so it's setIndex(1). This tells React to remember index is 1 now, and triggers another render.
+ 
+ * 3 - Our component's second render:- React still sees useState(0), but because React remembers that we set index to 1, it returns [1 , setIndex] instead.  And so on...
+
+*- Components need to remember things:
+*- The current input value
+*- The current Image etc.
+*- Component-specific memory is called state.
+
+* - Local Variable doesn't work to change the state:
+? Reasons:
+* - It doesn't consider any changes to the local variables.
+* - Changes to local variables won't trigger renders.(React doesn't realize it needs to render the component again with the new data).
+
+
+ * - To update a component with new data, two things need to happen:
+
+*1 - Maintain(persist) the data between renders.
+*2 - Trigger(start) React to render the component with the new data
+
+* - The useState hook provides those two things.
+*1 - A state variable to retain the data between renders.
+*2 - A state setter function to update the variable and trigger React to render the component again.
+*/
