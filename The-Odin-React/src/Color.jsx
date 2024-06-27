@@ -1,16 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Color.css";
 
-const COLORS = [
-  "pink",
-  "green",
-  "blue",
-  "yellow",
-  "purple",
-  "crimson",
-  "#ffff",
-  "#a4fdffd4",
-];
+const COLORS = ["pink", "green", "blue", "yellow", "purple"];
 
 function Color() {
   const [backgroundColor, setBackgroundColor] = useState(COLORS[0]);
