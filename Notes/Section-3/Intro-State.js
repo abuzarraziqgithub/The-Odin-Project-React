@@ -66,3 +66,18 @@
 * Hooks can only be called from the top level(Parent) of a functional component.
 * Hooks can't be called from inside loops or conditions.
 */
+
+//* Summary :
+// - State is just  the current snapshot of our program.
+// - Sate is just a Data - "Data that controls how the program is behaving".
+
+// - React Provides primitives to manipulate the state of our components.
+// - State is a component' memory.
+// - The useState hook is a built-in hook in React that allow us to define a state in a function component.
+// - It takes an initial value as a parameter and returns an array with two elements.
+// - The current Element
+// - The function to update the state value.
+
+// - In React, when a component state, props change, the component is destroyed and recreated from scratch.
+// - The entire component is recreated, but this time with the latest state value will be returned from the useState.
+// - This process is called re-rendering.
