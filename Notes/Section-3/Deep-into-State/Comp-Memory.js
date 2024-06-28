@@ -15,22 +15,21 @@
  * The handleClick event handler is updating a local variable, index.
  * But two things prevent that change from being visible.
  
-?1 - Local variables don't persist between renders:
+?1 - Local variables don't persist(maintain/exist) between renders:
  * When React renders this component a second time, It renders it from scratch-- It doesn't consider any changes to the local variables.
 
-?2 - Changes to local variables won't trigger renders:
+?2 - Changes to local variables won't trigger(Point towards) renders:
  * React doesn't realize it needs to render the component again with the new data.
 
 * To update a component with new data, two things need to happen:
 
-* 1 - Maintain the data between the renders.
-* 2 - Trigger(Start) React to render the component with new data(re-rendering)
+* 1 - Keep the data between the renders.
+* 2 - Trigger(order) React to render the component with new data(re-rendering)
 
 ? - The useSate Hook provides those two things:
  * 1 - A state variable to retain the data between renders
  * 2 - A state setter function to update the variable and trigger React to render the component again.
 
-? Hooks:
  * Hooks are special functions that are only available while React is rendering
  * They let us "hook into" different React features.
 
@@ -99,7 +98,7 @@ const [index, setIndex] = useState(0);
 
 * - Local Variable doesn't work to change the state:
 ? Reasons:
-* - It doesn't consider any changes to the local variables.
+* - React doesn't consider any changes to the local variables, when renders.
 * - Changes to local variables won't trigger renders.(React doesn't realize it needs to render the component again with the new data).
 
 
