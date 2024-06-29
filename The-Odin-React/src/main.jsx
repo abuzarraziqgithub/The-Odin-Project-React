@@ -6,6 +6,7 @@ import Color from "./colors-Comps/Color.jsx";
 import State from "./States/State.jsx";
 import StateAnalysis from "./States/StateAnalysis.jsx";
 import InfiniteLoopState from "./States/InfiniteLoopState.jsx";
+import ControlledComponents from "./States/ControlledComponents.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -14,5 +15,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <State /> */}
     {/* <StateAnalysis /> */}
     {/* <InfiniteLoopState /> */}
+    <ControlledComponents />
   </React.StrictMode>
 );
