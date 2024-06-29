@@ -4,6 +4,7 @@ function StateAnalysis() {
   const [person, setPerson] = useState({ name: "Abuzar", age: 20 });
 
   // * State variables aren't reactive; the component is.
+  //* State updates are asynchronous.
   //* Whenever we call the setState function, React will apply the update in the next component render.
   const handleIncreaseAge = function () {
     console.log("in handleIncreaseAge (before setPerson call): ", person);
