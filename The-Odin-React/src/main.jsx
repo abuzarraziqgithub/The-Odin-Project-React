@@ -8,6 +8,7 @@ import StateAnalysis from "./States/StateAnalysis.jsx";
 import InfiniteLoopState from "./States/InfiniteLoopState.jsx";
 import ControlledComponents from "./States/ControlledComponents.jsx";
 import StateUpdater from "./States/StateUpdater.jsx";
+import SetStateTriggerRenders from "./States/SetStateTriggerRenders.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -18,5 +19,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <InfiniteLoopState /> */}
     <ControlledComponents />
     <StateUpdater />
+    <SetStateTriggerRenders />
   </React.StrictMode>
 );
